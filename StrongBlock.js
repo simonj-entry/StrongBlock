@@ -390,6 +390,9 @@ const LibraryCreator = {
 color: EntryStatic.colorSet.block.default.HARDWAR,
 outerLine: EntryStatic.colorSet.block.darken.HARDWAR
 },
+//////////////////////////////////////
+
+//////////////////////////////////////
     {
       name: 'SearchGoogle', // 블럭 이름 지정
       template: '%1 를(을) 구글에 검색하기%2', // 표시할 내용
@@ -424,7 +427,10 @@ outerLine: EntryStatic.colorSet.block.darken.HARDWAR
         // script.getValue('위에 map에서 설정한 변수 이름', script) 이 코드로 입력값 로드 가능
         open('https://google.com/search?q=' + script.getValue('SEARCHRESULT', script));
         return script.callReturn() // 일반 블럭 코드 뒤에는 반드시 붙여주세요
-      },//
+      },
+//////////////////////////////////////
+
+//////////////////////////////////////
       {
       name: 'SearchNaver', // 블럭 이름 지정
       template: '%1 를(을) 네이버에 검색하기%2', // 표시할 내용
@@ -459,7 +465,10 @@ outerLine: EntryStatic.colorSet.block.darken.HARDWAR
         // script.getValue('위에 map에서 설정한 변수 이름', script) 이 코드로 입력값 로드 가능
         open('https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=' + script.getValue('SEARCHRESULT', script));
         return script.callReturn() // 일반 블럭 코드 뒤에는 반드시 붙여주세요
-      },//끝
+      },
+//////////////////////////////////////
+
+//////////////////////////////////////
       {
     name: 'boostMode',
     template: '부스트 모드가 켜져 있는가?',
@@ -474,7 +483,10 @@ outerLine: EntryStatic.colorSet.block.darken.HARDWAR
     class: 'text',
     func: async (sprite, script) => {
       (typeof useWebGL == 'undefined') ? false : useWebGL == true ? true : false;
-    },//끝
+    },
+//////////////////////////////////////
+
+//////////////////////////////////////
      {
     name: 'OpenUserPage',
     template: '%1 유저의 마이페이지 열기%2',
@@ -509,7 +521,7 @@ outerLine: EntryStatic.colorSet.block.darken.HARDWAR
       open('https://playentry.org/' + script.getValue('USERNAME', script));
       return script.callReturn();
     },
-  }//끝
+  }
     }
 //////////////////////////////////////
   ]
