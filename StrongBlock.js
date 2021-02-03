@@ -420,7 +420,7 @@ const blocks = [
                 SEARCHRESULT: 0 // %1의 입력값을 불러올 변수 이름(대문자)
             },
             class: 'text',
-            func: async (sprite, script) => { // 실행할 JS 코드
+            func: async (_sprite, script) => { // 실행할 JS 코드
                 // script.getValue('위에 map에서 설정한 변수 이름', script) 이 코드로 입력값 로드 가능
                 open('https://google.com/search?q=' + script.getValue('SEARCHRESULT', script));
                 return script.callReturn() // 일반 블럭 코드 뒤에는 반드시 붙여주세요
@@ -455,7 +455,7 @@ const blocks = [
                 SEARCHRESULT: 0 // %1의 입력값을 불러올 변수 이름(대문자)
             },
             class: 'text',
-            func: async (sprite, script) => { // 실행할 JS 코드
+            func: async (_sprite, script) => { // 실행할 JS 코드
                 // script.getValue('위에 map에서 설정한 변수 이름', script) 이 코드로 입력값 로드 가능
                 open('https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=' + script.getValue('SEARCHRESULT', script));
                 return script.callReturn() // 일반 블럭 코드 뒤에는 반드시 붙여주세요
@@ -505,7 +505,7 @@ const blocks = [
                 USERNAME: 0
             },
             class: 'text',
-            func: async (sprite, script) => {
+            func: async (_sprite, script) => {
                 open('https://playentry.org/' + script.getValue('USERNAME', script));
                 return script.callReturn();
             },
