@@ -554,7 +554,7 @@ const LibraryCreator = {
       params: [ // %n의 형식 지정
         { // %1의 형식 정의
           type: 'Text', // 텍스트 형식
-          text: '부스트모드', // 표시 내용
+          text: '작품', // 표시 내용
           color: EntryStatic.colorSet.common.TEXT, // 검은색
           align: 'center'
         }
@@ -582,6 +582,26 @@ const LibraryCreator = {
       (typeof useWebGL == 'undefined') ? false : useWebGL == true ? true : false;
     },
     },
+//////////////////////////////////////
+
+//////////////////////////////////////
+      {
+      name: "getid",
+      template: "이 작품의 아이디",
+      skeleton: "basic_string_field",
+      color: {
+        default: getcolor
+      },
+      params: [
+      ],
+      def: [],
+      map: {
+      },
+      class: "get",
+      func: async(sprite, script) => {
+        return Entry.projectId;
+      }
+    }
 //////////////////////////////////////
 
 //////////////////////////////////////
