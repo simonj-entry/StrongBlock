@@ -385,14 +385,36 @@ const LibraryCreator = {
     },
 //////////////////////////////////////
 
+//////////////////////////////////////블럭추가 시작
+addBlock('entry_console_clear', '강력크블록을 만들사람은 simonj이고, 도움을 주신분은 62045님입니다..%1', {
+color: EntryStatic.colorSet.block.default.HARDWAR,
+outerLine: EntryStatic.colorSet.block.darken.HARDWAR
+}, {
+params: [
+{
+type: 'Indicator',
+img: 'block_icon/hardware_icon.svg',
+size: 11,
+}
+],
+def: [
+null
+],
+map: {}
+}, 'text', (sprite, script) => {
+Entry.console.clear()
+return script.callReturn()
+})
+//////////////////////////////////////
+
 //////////////////////////////////////
     {
       name: 'SearchGoogle', // 블럭 이름 지정
       template: '%1 를(을) 구글에 검색하기%2', // 표시할 내용
       skeleton: 'basic', // 블럭 형식(basic은 일반 블럭)
       color: { // 색깔
-        default: '#e0ffff', //RGB 색깔
-        darken: '#e0ffff' //RGB 색깔
+        default: '#ba55d3', //RGB 색깔
+        darken: '#ba55d3' //RGB 색깔
       },
       params: [ // %n 정의
         { // %1 정의
@@ -430,8 +452,8 @@ const LibraryCreator = {
       template: '%1 를(을) 네이버에 검색하기%2', // 표시할 내용
       skeleton: 'basic', // 블럭 형식(basic은 일반 블럭)
       color: { // 색깔
-        default: '#e0ffff', //RGB 색깔
-        darken: '#e0ffff' //RGB 색깔
+        default: '#ba55d3', //RGB 색깔
+        darken: '#ba55d3' //RGB 색깔
       },
       params: [ // %n 정의
         { // %1 정의
@@ -469,8 +491,8 @@ const LibraryCreator = {
     template: '부스트 모드가 켜져 있는가?',
     skeleton: 'basic_boolean_field',
     color: {
-      default: '#e0ffff',
-      darken: '#e0ffff'
+      default: '#ba55d3',
+      darken: '#ba55d3'
     },
     params: [],
     def: [],
@@ -488,8 +510,8 @@ const LibraryCreator = {
     template: '%1 유저의 마이페이지 열기%2',
     skeleton: 'basic',
     color: {
-      default: '#e0ffff',
-      darken: '#e0ffff'
+      default: '#ba55d3',
+      darken: '#ba55d3'
     },
     params: [
       {
