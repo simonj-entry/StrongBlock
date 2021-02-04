@@ -358,7 +358,7 @@ const LibraryCreator = {
         // 카테고리 이름 적용
         $(`#entryCategory${category}`).append(text)
       }
-      console.log('현재버전은 0.0.1입니다.'), alert('현재버전은 0.0.1입니다.')
+      alert('현재 버전은 v0.0.1입니다.'), console.log('제작하는데 도움을 주신 62045님 감사합니다.') 
     }
   }
   const blocks = [
@@ -488,7 +488,7 @@ const LibraryCreator = {
       def: [ // %n 기본값
         { // %1 정의
           type: 'text',
-          params: ['playentry.org'] // 기본으로 입력된 값
+          params: ['https://playentry.org'] // 기본으로 입력된 값
         },
         null // %2 정의(이미지 형식이므로 null로 설정)
       ],
@@ -612,6 +612,39 @@ const LibraryCreator = {
 name: 'get', // 블럭 이름
 template: '%1 가져오기 (GET)', // %n으로 입력값 설정 가능
 skeleton: 'basic_string_field', // 대입 가능한 블럭 형식 지정
+color: {
+default: '#383838', // 색깔
+darken: '#383838' // 색깔
+},
+params: [
+{ // %1 정의(입력값)
+type: 'Block',
+accept: 'string'
+}
+],
+def: [
+{ // %1의 기본
+type: 'text',
+params: ['https://playentry.org/api/discuss/findNotice'] // 기본값 내용
+}
+],
+map: {
+APIURL: 0 // %1에서 입력받은 값 받을 변수 이름 지정
+},
+class: 'text',
+func: async (sprite, script) => { // 코드
+let res = await fetch(script.getValue('APIURL', script)); // 불러오기
+let data = await res.json(); // json 변환
+return data; // 반환
+},
+},
+//////////////////////////////////////
+
+//////////////////////////////////////
+      {
+name: 'get', // 블럭 이름
+template: '%1 가져오기 (GET)', // %n으로 입력값 설정 가능
+skeleton: 'basic', // 대입 가능한 블럭 형식 지정
 color: {
 default: '#383838', // 색깔
 darken: '#383838' // 색깔
