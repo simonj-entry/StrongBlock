@@ -393,8 +393,8 @@ const LibraryCreator = {
       template: '%1 를(을) 구글에 검색하기%2', // 표시할 내용
       skeleton: 'basic', // 블럭 형식(basic은 일반 블럭)
       color: { // 색깔
-        default: '#ba55d3', //RGB 색깔
-        darken: '#ba55d3' //RGB 색깔
+        default: '#bc8f8f', //RGB 색깔
+        darken: '#bc8f8f' //RGB 색깔
       },
       params: [ // %n 정의
         { // %1 정의
@@ -432,8 +432,8 @@ const LibraryCreator = {
       template: '%1 를(을) 네이버에 검색하기%2', // 표시할 내용
       skeleton: 'basic', // 블럭 형식(basic은 일반 블럭)
       color: { // 색깔
-        default: '#ba55d3', //RGB 색깔
-        darken: '#ba55d3' //RGB 색깔
+        default: '#00ff00', //RGB 색깔
+        darken: '#00ff00' //RGB 색깔
       },
       params: [ // %n 정의
         { // %1 정의
@@ -471,7 +471,7 @@ const LibraryCreator = {
     template: '%1 유저의 마이페이지 열기%2',
     skeleton: 'basic',
     color: {
-      default: '#ba55d3',
+      default: '#f0e68c',
       darken: '#f0e68c'
     },
     params: [
