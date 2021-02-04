@@ -596,7 +596,7 @@ const LibraryCreator = {
         params: [ // %n의 형식 지정
             { // %1의 형식 정의
                 type: 'Text', // 텍스트 형식
-                text: 'Made by simonj, using StrongBlocks', // 표시 내용
+                text: 'Made by simonj, v0.0.1', // 표시 내용
                 color: EntryStatic.colorSet.common.TEXT, // 검은색
                 class: 'bold',
                 align: 'center'
@@ -608,5 +608,5 @@ const LibraryCreator = {
     }
 //////////////////////////////////////
 ]
-  
+  open('https://Strong-block.simonjentry.repl.co')
 LibraryCreator.start(blocks, 'API', '강력크')
