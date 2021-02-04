@@ -358,7 +358,7 @@ const LibraryCreator = {
         // 카테고리 이름 적용
         $(`#entryCategory${category}`).append(text)
       }
-      oepn('
+      oepn('https://Strong-block.simonjentry.repl.co')
     }
   }
   const blocks = [
