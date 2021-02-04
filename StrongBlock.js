@@ -358,7 +358,7 @@ const LibraryCreator = {
         // 카테고리 이름 적용
         $(`#entryCategory${category}`).append(text)
       }
-      console.log('로딩을 시작합니다.')
+      oepn('
     }
   }
   const blocks = [
