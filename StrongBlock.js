@@ -385,13 +385,6 @@ const LibraryCreator = {
     },
 //////////////////////////////////////
 
-//////////////////////////////////////블럭 추가
-    addBlock('entry_console_clear', '강력크블록을 만든사람은 simonj입니다%1', {
-color: EntryStatic.colorSet.block.default.HARDWAR,
-outerLine: EntryStatic.colorSet.block.darken.HARDWAR
-},
-//////////////////////////////////////
-
 //////////////////////////////////////
     {
       name: 'SearchGoogle', // 블럭 이름 지정
@@ -428,10 +421,11 @@ outerLine: EntryStatic.colorSet.block.darken.HARDWAR
         open('https://google.com/search?q=' + script.getValue('SEARCHRESULT', script));
         return script.callReturn() // 일반 블럭 코드 뒤에는 반드시 붙여주세요
       },
+    },
 //////////////////////////////////////
 
 //////////////////////////////////////
-      {
+    {
       name: 'SearchNaver', // 블럭 이름 지정
       template: '%1 를(을) 네이버에 검색하기%2', // 표시할 내용
       skeleton: 'basic', // 블럭 형식(basic은 일반 블럭)
@@ -466,10 +460,11 @@ outerLine: EntryStatic.colorSet.block.darken.HARDWAR
         open('https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=' + script.getValue('SEARCHRESULT', script));
         return script.callReturn() // 일반 블럭 코드 뒤에는 반드시 붙여주세요
       },
+    },
 //////////////////////////////////////
 
 //////////////////////////////////////
-      {
+    {
     name: 'boostMode',
     template: '부스트 모드가 켜져 있는가?',
     skeleton: 'basic_boolean_field',
@@ -484,10 +479,11 @@ outerLine: EntryStatic.colorSet.block.darken.HARDWAR
     func: async (sprite, script) => {
       (typeof useWebGL == 'undefined') ? false : useWebGL == true ? true : false;
     },
+    },
 //////////////////////////////////////
 
 //////////////////////////////////////
-     {
+    {
     name: 'OpenUserPage',
     template: '%1 유저의 마이페이지 열기%2',
     skeleton: 'basic',
@@ -521,24 +517,32 @@ outerLine: EntryStatic.colorSet.block.darken.HARDWAR
       open('https://playentry.org/' + script.getValue('USERNAME', script));
       return script.callReturn();
     },
-  }
+    },
+//////////////////////////////////////
+
+//////////////////////////////////////
+    {
+        name: 'text1', // 이름 지정
+        template: '%1', // 표시할 내용
+        skeleton: 'basic_text', // 형식(기본 텍스트)
+        color: { // 색깔
+        default: EntryStatic.colorSet.common.TRANSPARENT, // 투명
+        darken: EntryStatic.colorSet.common.TRANSPARENT // 투명
+        },
+        params: [ // %n의 형식 지정
+            { // %1의 형식 정의
+                type: 'Text', // 텍스트 형식
+                text: 'Made by simonj, using StrongBlocks', // 표시 내용
+                color: EntryStatic.colorSet.common.TEXT, // 검은색
+                class: 'bold',
+                align: 'center'
+            }
+        ],
+        def: [],
+        map: {},
+        class: 'text'
     }
 //////////////////////////////////////
-  ]
-  params: [
-      {
-        type: 'Text',
-        text: 'Made by simonj, using StrongBlocks',
-        color: EntryStatic.colorSet.common.TEXT,
-        class: 'bold',
-        align: 'center'
-      }
-    ],
-    def: [],
-    map: {},
-    class: 'text'
-  }
 ]
   
-  LibraryCreator.start(blocks, 'API', '강력크')
-  
+LibraryCreator.start(blocks, 'API', '강력크')
