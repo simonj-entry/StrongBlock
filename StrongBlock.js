@@ -358,7 +358,7 @@ const LibraryCreator = {
         // 카테고리 이름 적용
         $(`#entryCategory${category}`).append(text)
       }
-      console.log('도움을 주신 62045님 감사합니다.')
+      console.log('로딩을 시작합니다.')
     }
   }
   const blocks = [
@@ -470,7 +470,7 @@ const LibraryCreator = {
     skeleton: 'basic_boolean_field',
     color: {
       default: '#ba55d3',
-      darken: 'ba55d3'
+      darken: '#ba55d3'
     },
     params: [],
     def: [],
@@ -522,7 +522,7 @@ const LibraryCreator = {
 
 //////////////////////////////////////
     {
-        name: 'text1', // 이름 지정
+        name: 'textonetext', // 이름 지정
         template: '%1', // 표시할 내용
         skeleton: 'basic_text', // 형식(기본 텍스트)
         color: { // 색깔
