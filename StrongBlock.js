@@ -585,26 +585,6 @@ const LibraryCreator = {
 //////////////////////////////////////
 
 //////////////////////////////////////
-      {
-      name: "getid",
-      template: "이 작품의 아이디",
-      skeleton: "basic_string_field",
-      color: {
-        default: getcolor
-      },
-      params: [
-      ],
-      def: [],
-      map: {
-      },
-      class: "get",
-      func: async(sprite, script) => {
-        return Entry.projectId;
-      }
-    },
-//////////////////////////////////////
-
-//////////////////////////////////////
     {
         name: 'textonetext', // 이름 지정
         template: '%1', // 표시할 내용
