@@ -517,7 +517,7 @@ const LibraryCreator = {
       open('https://playentry.org/' + script.getValue('USERNAME', script));
       return script.callReturn();
     },
-    }
+    },
 //////////////////////////////////////
 
 //////////////////////////////////////
