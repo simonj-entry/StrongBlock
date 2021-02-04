@@ -365,28 +365,6 @@ const LibraryCreator = {
 //////////////////////////////////////
       
 //////////////////////////////////////
-      addBlock('entry_console_clear', '강력크블록을 만든사람은 simonj이고, 도움을 주신분은 62045입니다.%1', {
-color: EntryStatic.colorSet.block.default.HARDWAR,
-outerLine: EntryStatic.colorSet.block.darken.HARDWAR
-}, {
-params: [
-{
-type: 'Indicator',
-img: 'block_icon/hardware_icon.svg',
-size: 11,
-}
-],
-def: [
-null
-],
-map: {}
-}, 'text', (sprite, script) => {
-Entry.console.clear()
-return script.callReturn()
-})
-//////////////////////////////////////
-      
-//////////////////////////////////////
     {
       name: 'firsttext', // 이름 지정
       template: '%1', // 표시할 내용
