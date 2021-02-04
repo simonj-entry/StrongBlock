@@ -358,7 +358,7 @@ const LibraryCreator = {
         // 카테고리 이름 적용
         $(`#entryCategory${category}`).append(text)
       }
-      console.log('현재버전은 0.0.1입니다.')
+      console.log('현재버전은 0.0.1입니다.'), alert('현재버전은 0.0.1입니다.')
     }
   }
   const blocks = [
@@ -488,7 +488,7 @@ const LibraryCreator = {
       def: [ // %n 기본값
         { // %1 정의
           type: 'text',
-          params: ['entry'] // 기본으로 입력된 값
+          params: ['playentry.org'] // 기본으로 입력된 값
         },
         null // %2 정의(이미지 형식이므로 null로 설정)
       ],
