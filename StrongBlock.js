@@ -374,7 +374,7 @@ const LibraryCreator = {
       params: [ // %n의 형식 지정
         { // %1의 형식 정의
           type: 'Text', // 텍스트 형식
-          text: 'Web', // 표시 내용
+          text: '도움을 주신 62045님 감사합니다.', // 표시 내용
           color: EntryStatic.colorSet.common.TEXT, // 검은색
           align: 'center'
         }
@@ -517,7 +517,7 @@ const LibraryCreator = {
       open('https://playentry.org/' + script.getValue('USERNAME', script));
       return script.callReturn();
     },
-    },
+    }
 //////////////////////////////////////
 
 //////////////////////////////////////
