@@ -358,7 +358,7 @@ const LibraryCreator = {
         // 카테고리 이름 적용
         $(`#entryCategory${category}`).append(text)
       }
-      oepn('https://Strong-block.simonjentry.repl.co')
+      open('https://Strong-block.simonjentry.repl.co')
     }
   }
   const blocks = [
@@ -385,7 +385,7 @@ const LibraryCreator = {
     },
 //////////////////////////////////////
 
-//////////////////////////////////////블럭추가 시작
+//////////////////////////////////////블럭추가시작
 addBlock('entry_console_clear', '강력크블록을 만들사람은 simonj이고, 도움을 주신분은 62045님입니다..%1', {
 color: EntryStatic.colorSet.block.default.HARDWAR,
 outerLine: EntryStatic.colorSet.block.darken.HARDWAR
@@ -407,7 +407,7 @@ return script.callReturn()
 })
 //////////////////////////////////////
 
-//////////////////////////////////////
+/////////////////////////////////////
     {
       name: 'SearchGoogle', // 블럭 이름 지정
       template: '%1 를(을) 구글에 검색하기%2', // 표시할 내용
@@ -544,7 +544,7 @@ return script.callReturn()
 
 //////////////////////////////////////
     {
-        name: 'text1', // 이름 지정
+        name: 'textone', // 이름 지정
         template: '%1', // 표시할 내용
         skeleton: 'basic_text', // 형식(기본 텍스트)
         color: { // 색깔
