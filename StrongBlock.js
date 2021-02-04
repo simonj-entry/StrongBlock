@@ -472,7 +472,7 @@ const LibraryCreator = {
     skeleton: 'basic',
     color: {
       default: '#ba55d3',
-      darken: '#ba55d3'
+      darken: '#f0e68c'
     },
     params: [
       {
@@ -532,8 +532,8 @@ const LibraryCreator = {
     template: '부스트 모드가 켜져 있는가?',
     skeleton: 'basic_boolean_field',
     color: {
-      default: '#00008b',
-      darken: '#00008b'
+      default: '#66cdaa',
+      darken: '#66cdaa'
     },
     params: [],
     def: [],
