@@ -376,7 +376,7 @@ const LibraryCreator = {
       params: [ // %n의 형식 지정
         { // %1의 형식 정의
           type: 'Text', // 텍스트 형식
-          text: 'Web', // 표시 내용
+          text: '웹', // 표시 내용
           color: EntryStatic.colorSet.common.TEXT, // 검은색
           align: 'center'
         }
@@ -393,7 +393,7 @@ const LibraryCreator = {
       template: '%1 를(을) 구글에 검색하기%2', // 표시할 내용
       skeleton: 'basic', // 블럭 형식(basic은 일반 블럭)
       color: { // 색깔
-        default: EntryStatic.colorSet.common.TRANSPARENT, //RGB 색깔
+        default: '#990033', //RGB 색깔
         darken: '#750028' //RGB 색깔
       },
       params: [ // %n 정의
