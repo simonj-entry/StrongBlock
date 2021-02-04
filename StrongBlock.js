@@ -374,7 +374,7 @@ const LibraryCreator = {
       params: [ // %n의 형식 지정
         { // %1의 형식 정의
           type: 'Text', // 텍스트 형식
-          text: '도움을 주신 62045님 감사합니다.', // 표시 내용
+          text: 'WEB', // 표시 내용
           color: EntryStatic.colorSet.common.TEXT, // 검은색
           align: 'center'
         }
@@ -465,25 +465,6 @@ const LibraryCreator = {
 
 //////////////////////////////////////
     {
-    name: 'boostMode',
-    template: '부스트 모드가 켜져 있는가?',
-    skeleton: 'basic_boolean_field',
-    color: {
-      default: '#ba55d3',
-      darken: '#ba55d3'
-    },
-    params: [],
-    def: [],
-    map: {},
-    class: 'text',
-    func: async (sprite, script) => {
-      (typeof useWebGL == 'undefined') ? false : useWebGL == true ? true : false;
-    },
-    },
-//////////////////////////////////////
-
-//////////////////////////////////////
-    {
     name: 'OpenUserPage',
     template: '%1 유저의 마이페이지 열기%2',
     skeleton: 'basic',
@@ -516,6 +497,48 @@ const LibraryCreator = {
     func: async (sprite, script) => {
       open('https://playentry.org/' + script.getValue('USERNAME', script));
       return script.callReturn();
+    },
+    },
+//////////////////////////////////////
+
+//////////////////////////////////////
+      {
+      name: 'texttwotext', // 이름 지정
+      template: '%1', // 표시할 내용
+      skeleton: 'basic_text', // 형식(기본 텍스트)
+      color: { // 색깔
+        default: EntryStatic.colorSet.common.TRANSPARENT, // 투명
+        darken: EntryStatic.colorSet.common.TRANSPARENT // 투명
+      },
+      params: [ // %n의 형식 지정
+        { // %1의 형식 정의
+          type: 'Text', // 텍스트 형식
+          text: 'BoostMode', // 표시 내용
+          color: EntryStatic.colorSet.common.TEXT, // 검은색
+          align: 'center'
+        }
+      ],
+      def: [],
+      map: {},
+      class: 'text'
+    },
+//////////////////////////////////////
+
+//////////////////////////////////////
+    {
+    name: 'boostMode',
+    template: '부스트 모드가 켜져 있는가?',
+    skeleton: 'basic_boolean_field',
+    color: {
+      default: '#ba55d3',
+      darken: '#ba55d3'
+    },
+    params: [],
+    def: [],
+    map: {},
+    class: 'text',
+    func: async (sprite, script) => {
+      (typeof useWebGL == 'undefined') ? false : useWebGL == true ? true : false;
     },
     },
 //////////////////////////////////////
