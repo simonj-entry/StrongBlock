@@ -554,7 +554,7 @@ const LibraryCreator = {
       params: [ // %n의 형식 지정
         { // %1의 형식 정의
           type: 'Text', // 텍스트 형식
-          text: '작품', // 표시 내용
+          text: '부스트모드', // 표시 내용
           color: EntryStatic.colorSet.common.TEXT, // 검은색
           align: 'center'
         }
@@ -582,6 +582,62 @@ const LibraryCreator = {
       (typeof useWebGL == 'undefined') ? false : useWebGL == true ? true : false;
     },
     },
+//////////////////////////////////////
+
+//////////////////////////////////////
+      {
+      name: 'textthreetext', // 이름 지정
+      template: '%1', // 표시할 내용
+      skeleton: 'basic_text', // 형식(기본 텍스트)
+      color: { // 색깔
+        default: EntryStatic.colorSet.common.TRANSPARENT, // 투명
+        darken: EntryStatic.colorSet.common.TRANSPARENT // 투명
+      },
+      params: [ // %n의 형식 지정
+        { // %1의 형식 정의
+          type: 'Text', // 텍스트 형식
+          text: '데이터', // 표시 내용
+          color: EntryStatic.colorSet.common.TEXT, // 검은색
+          align: 'center'
+        }
+      ],
+      def: [],
+      map: {},
+      class: 'text'
+    },
+//////////////////////////////////////
+
+//////////////////////////////////////
+      {
+name: 'get', // 블럭 이름
+template: '%1 가져오기 (GET)', // %n으로 입력값 설정 가능
+skeleton: 'basic_string_field', // 대입 가능한 블럭 형식 지정
+color: {
+default: '#383838', // 색깔
+darken: '#383838' // 색깔
+},
+params: [
+{ // %1 정의(입력값)
+type: 'Block',
+accept: 'string'
+}
+],
+def: [
+{ // %1의 기본
+type: 'text',
+params: ['https://playentry.org/api/discuss/findNotice'] // 기본값 내용
+}
+],
+map: {
+APIURL: 0 // %1에서 입력받은 값 받을 변수 이름 지정
+},
+class: 'text',
+func: async (sprite, script) => { // 코드
+let res = await fetch(script.getValue('APIURL', script)); // 불러오기
+let data = await res.json(); // json 변환
+return data; // 반환
+},
+},
 //////////////////////////////////////
 
 //////////////////////////////////////
