@@ -374,7 +374,7 @@ const LibraryCreator = {
       params: [ // %n의 형식 지정
         { // %1의 형식 정의
           type: 'Text', // 텍스트 형식
-          text: 'WEB', // 표시 내용
+          text: 'Web', // 표시 내용
           color: EntryStatic.colorSet.common.TEXT, // 검은색
           align: 'center'
         }
@@ -530,8 +530,8 @@ const LibraryCreator = {
     template: '부스트 모드가 켜져 있는가?',
     skeleton: 'basic_boolean_field',
     color: {
-      default: '#ba55d3',
-      darken: '#ba55d3'
+      default: '#00008b',
+      darken: '#00008b'
     },
     params: [],
     def: [],
