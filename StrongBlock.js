@@ -393,8 +393,8 @@ const LibraryCreator = {
       template: '%1 를(을) 구글에 검색하기%2', // 표시할 내용
       skeleton: 'basic', // 블럭 형식(basic은 일반 블럭)
       color: { // 색깔
-        default: '#bc8f8f', //RGB 색깔
-        darken: '#bc8f8f' //RGB 색깔
+        default: '#87003A', //RGB 색깔
+        darken: '#750028' //RGB 색깔
       },
       params: [ // %n 정의
         { // %1 정의
@@ -433,7 +433,7 @@ const LibraryCreator = {
       skeleton: 'basic', // 블럭 형식(basic은 일반 블럭)
       color: { // 색깔
         default: '#00ff00', //RGB 색깔
-        darken: '#00ff00' //RGB 색깔
+        darken: '#1DDB16' //RGB 색깔
       },
       params: [ // %n 정의
         { // %1 정의
@@ -472,7 +472,7 @@ const LibraryCreator = {
       skeleton: 'basic', // 블럭 형식(basic은 일반 블럭)
       color: { // 색깔
         default: '#5cd1e5', //RGB 색깔
-        darken: '#5cd1e5' //RGB 색깔
+        darken: '#4abfd3' //RGB 색깔
       },
       params: [ // %n 정의
         { // %1 정의
@@ -511,7 +511,7 @@ const LibraryCreator = {
     skeleton: 'basic',
     color: {
       default: '#f0e68c',
-      darken: '#f0e68c'
+      darken: '#D6C94D'
     },
     params: [
       {
@@ -572,7 +572,7 @@ const LibraryCreator = {
     skeleton: 'basic_boolean_field',
     color: {
       default: '#66cdaa',
-      darken: '#66cdaa'
+      darken: '#59B395'
     },
     params: [],
     def: [],
