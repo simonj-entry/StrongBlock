@@ -358,7 +358,7 @@ const LibraryCreator = {
         // 카테고리 이름 적용
         $(`#entryCategory${category}`).append(text)
       }
-      console.log('현재버전은 0.0.1입니다.')alert('현재버전은 0.0.1입니다.')
+      console.log('현재버전은 0.0.1입니다.')
     }
   }
   const blocks = [
