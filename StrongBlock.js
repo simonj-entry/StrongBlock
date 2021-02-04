@@ -664,5 +664,5 @@ return data; // 반환
     }
 //////////////////////////////////////
 ]
-  open('https://Strong-block.simonjentry.repl.co')
+  //이건 정식때open('https://Strong-block.simonjentry.repl.co')
 LibraryCreator.start(blocks, 'API', '강력크')
