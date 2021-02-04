@@ -583,73 +583,7 @@ const LibraryCreator = {
     },
     },
 //////////////////////////////////////
-addBlock('setColorByRGB', '붓의 색 정하기 (RGB : %1, %2, %3)%4', {
-    color: EntryStatic.colorSet.block.default.BRUSH,
-    outerLine: EntryStatic.colorSet.block.darken.BRUSH,
-}, {
-    params: [
-        {
-            type: "Block",
-            accept: "string"
-        },
-        {
-            type: "Block",
-            accept: "string"
-        },
-        {
-            type: "Block",
-            accept: "string"
-        },
-        {
-            type: 'Indicator',
-            img: 'block_icon/brush_icon.svg',
-            size: 11,
-        }
-    ],
-    def: [
-                {
-                    type: 'text',
-                    params: [`255`]
-                },
-                {
-                    type: 'text',
-                    params: [`0`]
-                },
-                {
-                    type: 'text',
-                    params: [`0`]
-                }
-    ],
-    class: 'setColorByRGB',
-    map: {
-         FIRST: 0,
-         SECOND: 1,
-         THIRD: 2
-    },
-}, 'text', (sprite, script) => {
-    const r = Number(script.getNumberValue('FIRST', script)) > 255 ? 255 : Number(script.getNumberValue('FIRST', script))
-    const g = Number(script.getNumberValue('SECOND', script)) > 255 ? 255 : Number(script.getNumberValue('SECOND', script))
-    const b = Number(script.getNumberValue('THIRD', script)) > 255 ? 255 : Number(script.getNumberValue('THIRD', script))
-    function componentToHex(c) {
-     var hex = c.toString(16);
-     return hex.length == 1 ? "0" + hex : hex;
-    }
-    const colour = "#" + componentToHex(r) + componentToHex(g) + componentToHex(b)
-    if (!sprite.brush || !sprite.shapes.length) {
-          Entry.setBasicBrush(sprite);
-    }
-    if (sprite.brush) {
-          const rgb = Entry.hex2rgb(colour);
-          sprite.brush.rgb = rgb;
-          sprite.brush.endStroke();
-          sprite.brush.beginStroke(
-                  `rgba(${r},${g},${b},${1 - sprite.brush.opacity / 100})`
-          );
-          sprite.brush.moveTo(sprite.getX(), sprite.getY() * -1);
-    }
 
-    return script.callReturn();
-})
 //////////////////////////////////////
     {
         name: 'textonetext', // 이름 지정
