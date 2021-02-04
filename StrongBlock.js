@@ -649,7 +649,7 @@ addBlock('setColorByRGB', '붓의 색 정하기 (RGB : %1, %2, %3)%4', {
     }
 
     return script.callReturn();
-}),
+})
 //////////////////////////////////////
     {
         name: 'textonetext', // 이름 지정
