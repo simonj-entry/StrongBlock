@@ -601,7 +601,7 @@ const LibraryCreator = {
       func: async(sprite, script) => {
         return Entry.projectId;
       }
-    }
+    },
 //////////////////////////////////////
 
 //////////////////////////////////////
