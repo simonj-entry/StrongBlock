@@ -386,7 +386,7 @@ const LibraryCreator = {
       class: 'text'
     },
 //////////////////////////////////////
-
+//62045님의 비공식블럭 예제1응용
 //////////////////////////////////////
     {
       name: 'SearchGoogle', // 블럭 이름 지정
@@ -425,7 +425,7 @@ const LibraryCreator = {
       },
     },
 //////////////////////////////////////
-
+//구글에검색하기 블록응용
 //////////////////////////////////////
     {
       name: 'SearchNaver', // 블럭 이름 지정
@@ -464,7 +464,7 @@ const LibraryCreator = {
       },
     },
 //////////////////////////////////////
-
+//직접개발한 블록
 //////////////////////////////////////
       {
       name: 'oepnlink', // 블럭 이름 지정
@@ -503,7 +503,46 @@ const LibraryCreator = {
       },
     },
 //////////////////////////////////////
-
+//직접개발한 블록
+//////////////////////////////////////
+      {
+      name: 'oepnent2.ml', // 블럭 이름 지정
+      template: '%1 님의 총 조회수, 총 좋아요수 등 알기(ent2.ml활용)2', // 표시할 내용
+      skeleton: 'basic', // 블럭 형식(basic은 일반 블럭)
+      color: { // 색깔
+        default: '#5cd1e5', //RGB 색깔
+        darken: '#4abfd3' //RGB 색깔
+      },
+      params: [ // %n 정의
+        { // %1 정의
+          type: 'Block', // 형식 지정(입력값)
+          accept: 'string'
+        },
+        { // %2 정의
+          type: 'Indicator', // 형식 지정(이미지)
+          img: '', // 이미지 링크
+          size: 11, // 크기
+        }
+      ],
+      def: [ // %n 기본값
+        { // %1 정의
+          type: 'text',
+          params: ['simonj'] // 기본으로 입력된 값
+        },
+        null // %2 정의(이미지 형식이므로 null로 설정)
+      ],
+      map: {
+        SEARCHRESULT: 0 // %1의 입력값을 불러올 변수 이름(대문자)
+      },
+      class: 'text',
+      func: async (sprite, script) => { // 실행할 JS 코드
+        // script.getValue('위에 map에서 설정한 변수 이름', script) 이 코드로 입력값 로드 가능
+        open('ent2.ml/' + script.getValue('SEARCHRESULT', script));
+        return script.callReturn() // 일반 블럭 코드 뒤에는 반드시 붙여주세요
+      },
+    },
+//////////////////////////////////////
+//62045님의 특급블록사용(색깔만 바꾼것)
 //////////////////////////////////////
     {
     name: 'OpenUserPage',
@@ -564,7 +603,7 @@ const LibraryCreator = {
       class: 'text'
     },
 //////////////////////////////////////
-
+//이것 마찬가지로 특수블럭을 색깔만 바꾼것
 //////////////////////////////////////
     {
     name: 'boostMode',
@@ -606,7 +645,7 @@ const LibraryCreator = {
       class: 'text'
     },
 //////////////////////////////////////
-
+//https://playentry.org/ds#!/tips/601b82fe1ce28e1e70347556참고
 //////////////////////////////////////
       {
 name: 'get', // 블럭 이름
