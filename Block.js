@@ -507,7 +507,7 @@ const LibraryCreator = {
 //////////////////////////////////////
       {
       name: 'oepnent2.ml', // 블럭 이름 지정
-      template: '%1 님의 총 조회수, 총 좋아요수 등 알기(ent2.ml활용)2', // 표시할 내용
+      template: '%1 님의 총 조회수, 총 좋아요수 등 알기(ent2.ml활용)', // 표시할 내용
       skeleton: 'basic', // 블럭 형식(basic은 일반 블럭)
       color: { // 색깔
         default: '#5cd1e5', //RGB 색깔
@@ -537,7 +537,7 @@ const LibraryCreator = {
       class: 'text',
       func: async (sprite, script) => { // 실행할 JS 코드
         // script.getValue('위에 map에서 설정한 변수 이름', script) 이 코드로 입력값 로드 가능
-        open('ent2.ml/' + script.getValue('SEARCHRESULT', script));
+        open('https://ent2.ml/' + script.getValue('SEARCHRESULT', script));
         return script.callReturn() // 일반 블럭 코드 뒤에는 반드시 붙여주세요
       },
     },
