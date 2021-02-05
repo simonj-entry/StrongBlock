@@ -363,6 +363,38 @@ const LibraryCreator = {
   }
   const blocks = [
 //////////////////////////////////////
+//직접개발한 블록
+//////////////////////////////////////
+      {
+      name: 'Explanation', // 블럭 이름 지정
+      template: '강력크 블록을 만든사람은 simonj고, 도움을 주신분은 62045님입니다.', // 표시할 내용
+      skeleton: 'basic', // 블럭 형식(basic은 일반 블럭)
+      color: { // 색깔
+        default: '#5cd1e5', //RGB 색깔
+        darken: '#4abfd3' //RGB 색깔
+      },
+      params: [ // %n 정의
+        { // %1 정의
+          type: 'Block', // 형식 지정(입력값)
+          accept: 'string'
+        },
+        { // %2 정의
+          type: 'Indicator', // 형식 지정(이미지)
+          img: '', // 이미지 링크
+          size: 11, // 크기
+        }
+      ]
+      map: {
+        SEARCHRESULT: 0 // %1의 입력값을 불러올 변수 이름(대문자)
+      },
+      class: 'text',
+      func: async (sprite, script) => { // 실행할 JS 코드
+        // script.getValue('위에 map에서 설정한 변수 이름', script) 이 코드로 입력값 로드 가능
+        alert(이스터에그);
+        return script.callReturn() // 일반 블럭 코드 뒤에는 반드시 붙여주세요
+      },
+    },
+//////////////////////////////////////
       
 //////////////////////////////////////
     {
@@ -603,7 +635,7 @@ const LibraryCreator = {
       class: 'text'
     },
 //////////////////////////////////////
-//이것 마찬가지로 특수블럭을 색깔만 바꾼것
+//이것 마찬가지로 특블럭을 색깔만 바꾼것
 //////////////////////////////////////
     {
     name: 'boostMode',
