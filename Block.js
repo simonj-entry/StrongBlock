@@ -370,8 +370,8 @@ const LibraryCreator = {
       template: '강력크 블록을 만든사람은 simonj고, 도움을 주신분은 62045님입니다.', // 표시할 내용
       skeleton: 'basic', // 블럭 형식(basic은 일반 블럭)
       color: { // 색깔
-        default: '#5cd1e5', //RGB 색깔
-        darken: '#4abfd3' //RGB 색깔
+        default: '#000000', //RGB 색깔
+        darken: '#000000' //RGB 색깔
       },
       params: [ // %n 정의
         { // %1 정의
