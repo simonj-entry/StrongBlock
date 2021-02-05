@@ -507,11 +507,11 @@ const LibraryCreator = {
 //////////////////////////////////////
       {
       name: 'oepnent2.ml', // 블럭 이름 지정
-      template: '%1 님의 총 조회수, 총 좋아요수 등 알기(ent2.ml활용)', // 표시할 내용
+      template: '%1 님의 총 조회수, 총 좋아요수 등 확인하기(ent2.ml활용)', // 표시할 내용
       skeleton: 'basic', // 블럭 형식(basic은 일반 블럭)
       color: { // 색깔
-        default: '#5cd1e5', //RGB 색깔
-        darken: '#4abfd3' //RGB 색깔
+        default: '#FF8224', //RGB 색깔
+        darken: '#FF8224' //RGB 색깔
       },
       params: [ // %n 정의
         { // %1 정의
