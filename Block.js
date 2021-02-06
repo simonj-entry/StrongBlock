@@ -354,7 +354,7 @@ const LibraryCreator = {
       if (typeof useWebGL == "undefined") {
         updateCategory(category)
         // 아이콘 적용
-        $('head').append(`<style>#entryCategory${category}{background-image:url(https://raw.githack.com/simonj-entry/StrongBlock/main/strongbig.svg);background-repeat:no-repeat;margin-bottom:1px;background-position-y: 10px;background-size: 20px;}.entrySelectedCategory#entryCategory${category}{background-image:url(https://raw.githack.com/thoratica/EntBlocks/master/other_selected.svg);background-color:#FFC000;border-color:#FFC000;color:#fff}</style>`)
+        $('head').append(`<style>#entryCategory${category}{background-image:url(https://raw.githack.com/simonj-entry/StrongBlock/main/strongbig.svg);background-repeat:no-repeat;margin-bottom:1px;background-position-y: 10px;background-size: 20px;}.entrySelectedCategory#entryCategory${category}{background-image:url(https://raw.githack.com/simonj-entry/StrongBlock/main/Strong.svg);background-color:#FFC000;border-color:#000000;color:#fff}</style>`)
         // 카테고리 이름 적용
         $(`#entryCategory${category}`).append(text)
       }
