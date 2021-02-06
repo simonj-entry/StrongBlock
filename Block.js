@@ -625,37 +625,37 @@ const LibraryCreator = {
 //https://playentry.org/ds#!/tips/601d5f8fb2a42d4dfd198c28참고
 //////////////////////////////////////
 {
-name: 'FindUserBlocked', // 이름
-template: '%1 유저는 영구정지되었는가?', //표시 텍스트
-skeleton: 'basic_boolean_field', // 형식(판단값)
-color: {
-default: '#0000ff', // 색깔
-darken: '#0000ff' // 색깔
-},
-params: [
-{ // %1 정의
-type: 'Block',
-accept: 'string'
-}
-],
-def: [
-{ // %1 기본값
-type: 'text',
-params: ['simonj']
-}
-],
-map: {
-USERBLOCKEDNAME: 0 // %1의 입력값 받을 변수이름
-},
-class: 'text',
-func: async (sprite, script) => { //코드
-let blockedres = await fetch('https://playentry.org/api/getUserByusername/' + script.getValue('USERBLOCKEDNAME', script)); // 사용자 json 가져오기
-let blockeddata = await blockedres.json(); // json 변환
-let blockedjson = eval(blockeddata); // 지정
-let blockeddone = blockedjson['isBlocked']; // isBlocked 항목 가져오기
-(typeof blockeddone == true) ? true : false // True False 반환
-},
-},
+		name: 'FindUserBlocked',
+		template: '%1 유저는 영구정지되었는가?',
+		skeleton: 'basic_boolean_field',
+		color: {
+			default: '#66cdaa',
+			darken: '#383838'
+		},
+		params: [
+			{
+				type: 'Block',
+				accept: 'string'
+			}
+		],
+		def: [
+			{
+				type: 'text',
+				params: ['simonj']
+			}
+		],
+		map: {
+			USERBLOCKEDNAME: 0
+		},
+		class: 'text',
+		func: async (sprite, script) => {
+			let blockedres = await fetch('https://playentry.org/api/getUserByusername/' + script.getValue('USERBLOCKEDNAME', script));
+			let blockeddata = await blockedres.json();
+			let blockedjson = eval(blockeddata);
+			let blockeddone = blockedjson['isBlocked'];
+			return blockeddone;
+		},
+	},
 //////////////////////////////////////
 
 //////////////////////////////////////
