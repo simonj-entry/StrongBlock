@@ -403,7 +403,7 @@ const LibraryCreator = {
         },
         { // %2 정의
           type: 'Indicator', // 형식 지정(이미지)
-          img: 'https://raw.githack.com/simonj-entry/StrongBlock/main/strongbig.svg', // 이미지 링크
+          img: 'https://playentry.org/lib/entry-js/images/func.svg', // 이미지 링크
           size: 11, // 크기
         }
       ],
@@ -442,7 +442,7 @@ const LibraryCreator = {
         },
         { // %2 정의
           type: 'Indicator', // 형식 지정(이미지)
-          img: 'https://raw.githack.com/simonj-entry/StrongBlock/main/strongbig.svg', // 이미지 링크
+          img: 'https://playentry.org/lib/entry-js/images/func.svg', // 이미지 링크
           size: 11, // 크기
         }
       ],
@@ -481,7 +481,7 @@ const LibraryCreator = {
         },
         { // %2 정의
           type: 'Indicator', // 형식 지정(이미지)
-          img: 'https://raw.githack.com/simonj-entry/StrongBlock/main/strongbig.svg', // 이미지 링크
+          img: 'https://playentry.org/lib/entry-js/images/func.svg', // 이미지 링크
           size: 11, // 크기
         }
       ],
@@ -520,7 +520,7 @@ const LibraryCreator = {
         },
         { // %2 정의
           type: 'Indicator', // 형식 지정(이미지)
-          img: 'https://raw.githack.com/simonj-entry/StrongBlock/main/strongbig.svg', // 이미지 링크
+          img: 'https://playentry.org/lib/entry-js/images/func.svg', // 이미지 링크
           size: 11, // 크기
         }
       ],
@@ -559,7 +559,7 @@ const LibraryCreator = {
       },
       {
         type: 'Indicator',
-        img: 'https://raw.githack.com/simonj-entry/StrongBlock/main/strongbig.svg',
+        img: 'https://playentry.org/lib/entry-js/images/func.svg',
         size: 11,
       }
     ],
@@ -597,7 +597,7 @@ const LibraryCreator = {
       },
       {
         type: 'Indicator',
-        img: '',
+        img: 'https://playentry.org/lib/entry-js/images/func.svg',
         size: 11,
       }
     ],
