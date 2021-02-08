@@ -549,8 +549,8 @@ const LibraryCreator = {
     template: '%1 유저의 마이페이지 열기%2',
     skeleton: 'basic',
     color: {
-      default: '#f0e68c',
-      darken: '#D6C94D'
+      default: '#8c8c8c',
+      darken: '#8c8c8c'
     },
     params: [
       {
