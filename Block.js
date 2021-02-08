@@ -358,7 +358,7 @@ const LibraryCreator = {
         // 카테고리 이름 적용
         $(`#entryCategory${category}`).append(text)
       }
-      alert('현재 버전은 v0.0.1입니다.'), console.log('제작하는데 도움을 주신 62045님 감사합니다.') 
+      console.log('로딩을 시작합니다') 
     }
   }
   const blocks = [
@@ -403,7 +403,7 @@ const LibraryCreator = {
         },
         { // %2 정의
           type: 'Indicator', // 형식 지정(이미지)
-          img: '', // 이미지 링크
+          img: 'https://raw.githack.com/simonj-entry/StrongBlock/main/strongbig.svg', // 이미지 링크
           size: 11, // 크기
         }
       ],
@@ -442,7 +442,7 @@ const LibraryCreator = {
         },
         { // %2 정의
           type: 'Indicator', // 형식 지정(이미지)
-          img: '', // 이미지 링크
+          img: 'https://raw.githack.com/simonj-entry/StrongBlock/main/strongbig.svg', // 이미지 링크
           size: 11, // 크기
         }
       ],
@@ -481,7 +481,7 @@ const LibraryCreator = {
         },
         { // %2 정의
           type: 'Indicator', // 형식 지정(이미지)
-          img: '', // 이미지 링크
+          img: 'https://raw.githack.com/simonj-entry/StrongBlock/main/strongbig.svg', // 이미지 링크
           size: 11, // 크기
         }
       ],
@@ -520,7 +520,7 @@ const LibraryCreator = {
         },
         { // %2 정의
           type: 'Indicator', // 형식 지정(이미지)
-          img: '', // 이미지 링크
+          img: 'https://raw.githack.com/simonj-entry/StrongBlock/main/strongbig.svg', // 이미지 링크
           size: 11, // 크기
         }
       ],
@@ -559,7 +559,7 @@ const LibraryCreator = {
       },
       {
         type: 'Indicator',
-        img: '',
+        img: 'https://raw.githack.com/simonj-entry/StrongBlock/main/strongbig.svg',
         size: 11,
       }
     ],
@@ -580,7 +580,7 @@ const LibraryCreator = {
     },
     },
 //////////////////////////////////////
-
+//직접개발한 블록
 //////////////////////////////////////
 {
     name: 'OpenStaffselection',
@@ -769,5 +769,6 @@ return data; // 반환
     }
 //////////////////////////////////////
 ]
+  alert('로딩완료'), alert('현재버전은 0.1v입니다')
   //이건 정식때open('https://Strong-block.simonjentry.repl.co')
 LibraryCreator.start(blocks, 'API', '강력크')
