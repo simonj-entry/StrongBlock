@@ -582,6 +582,37 @@ const LibraryCreator = {
 //////////////////////////////////////
 
 //////////////////////////////////////
+{
+    name: 'OpenStaffselection',
+    template: '스태프선정 구경하기%2',
+    skeleton: 'basic',
+    color: {
+      default: '#000000',
+      darken: '#000000'
+    },
+    params: [
+      {
+        type: 'Block',
+        accept: 'string'
+      },
+      {
+        type: 'Indicator',
+        img: '',
+        size: 11,
+      }
+    ],
+    map: {
+      USERNAME: 0
+    },
+    class: 'text',
+    func: async (sprite, script) => {
+      open('https://playentry.org/all#!/?sort=staffPicked&rows=12&page=1&role=member');
+      return script.callReturn();
+    },
+    },
+//////////////////////////////////////
+
+//////////////////////////////////////
       {
       name: 'texttwotext', // 이름 지정
       template: '%1', // 표시할 내용
