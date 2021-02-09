@@ -358,7 +358,6 @@ const LibraryCreator = {
         // 카테고리 이름 적용
         $(`#entryCategory${category}`).append(text)
       }
-      console.log('로딩을 시작합니다') 
     }
   }
   const blocks = [
@@ -403,7 +402,7 @@ const LibraryCreator = {
         },
         { // %2 정의
           type: 'Indicator', // 형식 지정(이미지)
-          img: 'func.svg', // 이미지 링크
+          img: 'beta_tag.svg', // 이미지 링크
           size: 11, // 크기
         }
       ],
@@ -442,7 +441,7 @@ const LibraryCreator = {
         },
         { // %2 정의
           type: 'Indicator', // 형식 지정(이미지)
-          img: 'func.svg', // 이미지 링크
+          img: 'beta_tag.svg', // 이미지 링크
           size: 11, // 크기
         }
       ],
@@ -481,7 +480,7 @@ const LibraryCreator = {
         },
         { // %2 정의
           type: 'Indicator', // 형식 지정(이미지)
-          img: 'func.svg', // 이미지 링크
+          img: 'beta_tag.svg', // 이미지 링크
           size: 11, // 크기
         }
       ],
@@ -507,7 +506,7 @@ const LibraryCreator = {
 //////////////////////////////////////
       {
       name: 'oepnent2.ml', // 블럭 이름 지정
-      template: '%1 님의 총 조회수, 총 좋아요수 등 확인하기', // 표시할 내용
+      template: '%1 님의 총 조회수, 총 좋아요수 등 확인하기%2', // 표시할 내용
       skeleton: 'basic', // 블럭 형식(basic은 일반 블럭)
       color: { // 색깔
         default: '#FF8224', //RGB 색깔
@@ -520,7 +519,7 @@ const LibraryCreator = {
         },
         { // %2 정의
           type: 'Indicator', // 형식 지정(이미지)
-          img: 'func.svg', // 이미지 링크
+          img: 'beta_tag.svg', // 이미지 링크
           size: 11, // 크기
         }
       ],
@@ -559,7 +558,7 @@ const LibraryCreator = {
       },
       {
         type: 'Indicator',
-        img: 'func.svg',
+        img: 'beta_tag.svg',
         size: 11,
       }
     ],
@@ -584,7 +583,7 @@ const LibraryCreator = {
 //////////////////////////////////////
 {
     name: 'OpenStaffselection',
-    template: '스태프선정 구경하기%2',
+    template: '스태프선정 구경하기%1',
     skeleton: 'basic',
     color: {
       default: '#000000',
@@ -592,12 +591,8 @@ const LibraryCreator = {
     },
     params: [
       {
-        type: 'Block',
-        accept: 'string'
-      },
-      {
         type: 'Indicator',
-        img: 'func.svg',
+        img: 'beta_tag.svg',
         size: 11,
       }
     ],
