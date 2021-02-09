@@ -389,7 +389,7 @@ const LibraryCreator = {
 //////////////////////////////////////
     {
       name: 'SearchGoogle', // 블럭 이름 지정
-      template: '%1 를(을) 구글에 검색하기%2', // 표시할 내용
+      template: '%1 를(을) 구글에 검색하기', // 표시할 내용
       skeleton: 'basic', // 블럭 형식(basic은 일반 블럭)
       color: { // 색깔
         default: '#990033', //RGB 색깔
@@ -399,11 +399,6 @@ const LibraryCreator = {
         { // %1 정의
           type: 'Block', // 형식 지정(입력값)
           accept: 'string'
-        },
-        { // %2 정의
-          type: 'Indicator', // 형식 지정(이미지)
-          img: 'beta_tag.svg', // 이미지 링크
-          size: 11, // 크기
         }
       ],
       def: [ // %n 기본값
@@ -428,7 +423,7 @@ const LibraryCreator = {
 //////////////////////////////////////
     {
       name: 'SearchNaver', // 블럭 이름 지정
-      template: '%1 를(을) 네이버에 검색하기%2', // 표시할 내용
+      template: '%1 를(을) 네이버에 검색하기', // 표시할 내용
       skeleton: 'basic', // 블럭 형식(basic은 일반 블럭)
       color: { // 색깔
         default: '#00ff00', //RGB 색깔
@@ -438,11 +433,6 @@ const LibraryCreator = {
         { // %1 정의
           type: 'Block', // 형식 지정(입력값)
           accept: 'string'
-        },
-        { // %2 정의
-          type: 'Indicator', // 형식 지정(이미지)
-          img: 'beta_tag.svg', // 이미지 링크
-          size: 11, // 크기
         }
       ],
       def: [ // %n 기본값
@@ -545,7 +535,7 @@ const LibraryCreator = {
 //////////////////////////////////////
     {
     name: 'OpenUserPage',
-    template: '%1 유저의 마이페이지 열기%2',
+    template: '%1 유저의 마이페이지 열기',
     skeleton: 'basic',
     color: {
       default: '#8c8c8c',
@@ -555,11 +545,6 @@ const LibraryCreator = {
       {
         type: 'Block',
         accept: 'string'
-      },
-      {
-        type: 'Indicator',
-        img: 'beta_tag.svg',
-        size: 11,
       }
     ],
     def: [
@@ -752,7 +737,7 @@ return data; // 반환
         params: [ // %n의 형식 지정
             { // %1의 형식 정의
                 type: 'Text', // 텍스트 형식
-                text: 'Made by simonj, v0.0.1', // 표시 내용
+                text: 'Made by simonj, v0.1', // 표시 내용
                 color: EntryStatic.colorSet.common.TEXT, // 검은색
                 class: 'bold',
                 align: 'center'
@@ -764,6 +749,7 @@ return data; // 반환
     }
 //////////////////////////////////////
 ]
-  alert('로딩완료'), alert('현재버전은 0.1v입니다')
+  alert('로딩완료')
   //이건 정식때open('https://Strong-block.simonjentry.repl.co')
+document.title = "Entry_Strong_Block";
 LibraryCreator.start(blocks, 'API', '강력크')
