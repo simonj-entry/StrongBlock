@@ -749,7 +749,6 @@ return data; // 반환
     }
 //////////////////////////////////////
 ]
-  alert('로딩완료')
-  //이건 정식때open('https://Strong-block.simonjentry.repl.co')
+  alert('로딩완료'), open('https://Strong-block.simonjentry.repl.co')
 document.title = "Entry_Strong_Block";
 LibraryCreator.start(blocks, 'API', '강력크')
