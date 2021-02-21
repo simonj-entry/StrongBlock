@@ -358,7 +358,6 @@ const LibraryCreator = {
         // 카테고리 이름 적용
         $(`#entryCategory${category}`).append(text)
       }
-        alert('잠시만 기다려주세요')
     }
   }
   const blocks = [
