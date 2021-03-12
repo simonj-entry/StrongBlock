@@ -456,7 +456,7 @@ const LibraryCreator = {
 //구글에검색하기 블록응용
 //////////////////////////////////////
     {
-      name: 'SearchNaver', // 블럭 이름 지정
+      name: 'SearchDaum', // 블럭 이름 지정
       template: '%1 를(을) 다음에 검색하기', // 표시할 내용
       skeleton: 'basic', // 블럭 형식(basic은 일반 블럭)
       color: { // 색깔
@@ -488,7 +488,7 @@ const LibraryCreator = {
 //////////////////////////////////////
 //직접개발한 블록
 //////////////////////////////////////
-      {
+    {
       name: 'oepnlink', // 블럭 이름 지정
       template: '%1 URL열기(URL을 입력하세요)%2', // 표시할 내용
       skeleton: 'basic', // 블럭 형식(basic은 일반 블럭)
