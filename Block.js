@@ -485,6 +485,7 @@ const LibraryCreator = {
         open('https://search.daum.net/search?w=tot&DA=YZR&t__nil_searchbox=btn&sug=&sugo=&sq=&o=&q=' + script.getValue('SEARCHRESULT', script));
         return script.callReturn() // 일반 블럭 코드 뒤에는 반드시 붙여주세요
       },
+    },
 //////////////////////////////////////
 //직접개발한 블록
 //////////////////////////////////////
