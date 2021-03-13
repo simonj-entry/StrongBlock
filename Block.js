@@ -385,7 +385,7 @@ const LibraryCreator = {
       class: 'text'
     },
 //////////////////////////////////////
-//62045님의 비공식블럭 예제1사용 색깔과 블럭 내용만 
+
 //////////////////////////////////////
     {
       name: 'SearchGoogle', // 블럭 이름 지정
@@ -419,7 +419,7 @@ const LibraryCreator = {
       },
     },
 //////////////////////////////////////
-//구글에검색하기 블록응용
+
 //////////////////////////////////////
     {
       name: 'SearchNaver', // 블럭 이름 지정
@@ -453,7 +453,7 @@ const LibraryCreator = {
       },
     },
 //////////////////////////////////////
-//구글에검색하기 블록응용
+
 //////////////////////////////////////
     {
       name: 'SearchDaum', // 블럭 이름 지정
@@ -487,7 +487,7 @@ const LibraryCreator = {
       },
     },
 //////////////////////////////////////
-//직접개발한 블록
+
 //////////////////////////////////////
     {
       name: 'oepnlink', // 블럭 이름 지정
@@ -526,11 +526,11 @@ const LibraryCreator = {
       },
     },
 //////////////////////////////////////
-//직접개발한 블록
+
 //////////////////////////////////////
       {
       name: 'oepnent2.ml', // 블럭 이름 지정
-      template: '%1 님의 총 조회수, 총 좋아요수 등 확인하기%2', // 표시할 내용
+      template: '%1 ent2.ml 업데이트중이라서 사용 불가', // 표시할 내용
       skeleton: 'basic', // 블럭 형식(basic은 일반 블럭)
       color: { // 색깔
         default: '#FF8224', //RGB 색깔
@@ -540,19 +540,13 @@ const LibraryCreator = {
         { // %1 정의
           type: 'Block', // 형식 지정(입력값)
           accept: 'string'
-        },
-        { // %2 정의
-          type: 'Indicator', // 형식 지정(이미지)
-          img: 'beta_tag.svg', // 이미지 링크
-          size: 11, // 크기
         }
       ],
       def: [ // %n 기본값
         { // %1 정의
           type: 'text',
           params: ['simonj'] // 기본으로 입력된 값
-        },
-        null // %2 정의(이미지 형식이므로 null로 설정)
+        }
       ],
       map: {
         SEARCHRESULT: 0 // %1의 입력값을 불러올 변수 이름(대문자)
@@ -565,11 +559,11 @@ const LibraryCreator = {
       },
     },
 //////////////////////////////////////
-//62045님의 특급블록사용(색깔만 바꾼것)
+
 //////////////////////////////////////
     {
     name: 'OpenUserPage',
-    template: '%1 유저의 마이페이지 열기',
+    template: '%1 아이디를 가진 유저의 마이페이지 열기',
     skeleton: 'basic',
     color: {
       default: '#8c8c8c',
@@ -584,7 +578,7 @@ const LibraryCreator = {
     def: [
       {
         type: 'text',
-        params: ['simonj']
+        params: ['5e5259eadf7dfa00496c63b1']
       },
       null
     ],
@@ -598,7 +592,7 @@ const LibraryCreator = {
     },
     },
 //////////////////////////////////////
-//직접개발한 블록
+
 //////////////////////////////////////
 {
     name: 'OpenStaffselection',
@@ -613,7 +607,7 @@ const LibraryCreator = {
     },
     class: 'text',
     func: async (sprite, script) => {
-      open('https://playentry.org/all#!/?sort=staffPicked&rows=12&page=1&role=member');
+      open('https://playentry.org/project/list/staffpick');
       return script.callReturn();
     },
     },
@@ -641,7 +635,7 @@ const LibraryCreator = {
       class: 'text'
     },
 //////////////////////////////////////
-//이것 마찬가지로 특블럭을 색깔만 바꾼것
+
 //////////////////////////////////////
     {
     name: 'boostMode',
@@ -659,41 +653,6 @@ const LibraryCreator = {
       (typeof useWebGL == 'undefined') ? false : useWebGL == true ? true : false;
     },
     },
-//////////////////////////////////////
-//https://playentry.org/ds#!/tips/601d5f8fb2a42d4dfd198c28참고
-//////////////////////////////////////
-{
-		name: 'FindUserBlocked',
-		template: '%1 유저는 영구정지되었는가?',
-		skeleton: 'basic_boolean_field',
-		color: {
-			default: '#66cdaa',
-			darken: '#383838'
-		},
-		params: [
-			{
-				type: 'Block',
-				accept: 'string'
-			}
-		],
-		def: [
-			{
-				type: 'text',
-				params: ['simonj']
-			}
-		],
-		map: {
-			USERBLOCKEDNAME: 0
-		},
-		class: 'text',
-		func: async (sprite, script) => {
-			let blockedres = await fetch('https://playentry.org/api/getUserByusername/' + script.getValue('USERBLOCKEDNAME', script));
-			let blockeddata = await blockedres.json();
-			let blockedjson = eval(blockeddata);
-			let blockeddone = blockedjson['isBlocked'];
-			return blockeddone;
-		},
-	},
 //////////////////////////////////////
 
 //////////////////////////////////////
@@ -718,7 +677,7 @@ const LibraryCreator = {
       class: 'text'
     },
 //////////////////////////////////////
-//https://playentry.org/ds#!/tips/601b82fe1ce28e1e70347556참고
+
 //////////////////////////////////////
       {
 name: 'get', // 블럭 이름
