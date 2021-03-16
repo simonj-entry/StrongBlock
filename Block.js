@@ -545,7 +545,7 @@ const LibraryCreator = {
       def: [ // %n 기본값
         { // %1 정의
           type: 'text',
-          params: ['simonj'] // 기본으로 입력된 값
+          params: [''] // 기본으로 입력된 값
         }
       ],
       map: {
